@@ -31,8 +31,8 @@ CreateThread(function()
     franklinsAunt:loadDefault() -- -9.96562, -1438.54, 31.1015
     floyd:loadDefault() -- -1150.703, -1520.713, 10.633
     zancudoGates:loadDefault() -- -1600.30100000, 2806.73100000, 18.79683000
+    pillboxHospital:loadDefault() -- 307.1680, -590.807, 43.280
     bahamaMamas:enable(true) -- -1388.0013, -618.41967, 30.819599
-    pillboxHospital:enable(true) -- 307.1680, -590.807, 43.280
 
     -- Other
     ammunations:loadDefault()
