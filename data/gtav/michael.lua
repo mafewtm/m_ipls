@@ -40,10 +40,9 @@ local object = {
 
 ---@param refresh boolean Whether to refresh or not
 function object.interior.style:clear(refresh)
-    SetIplPropState(object.interior.id, {
-        self.normal,
-        self.moved
-    }, false, refresh)
+    local styles = lib.array.merge(self.normal, self.moved)
+
+    SetIplPropState(object.interior.id, styles, false, refresh)
 end
 
 ---@param style string | table Type of style to set

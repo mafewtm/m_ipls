@@ -12,10 +12,9 @@ local object = {
 }
 
 function object.style:clear()
-    EnableIpl({
-        self.normal,
-        self.sunk
-    }, false)
+    local styles = lib.array.merge(self.normal, self.sunk)
+
+    EnableIpl(styles, false)
 end
 
 ---@param style string | table Type of style to set
