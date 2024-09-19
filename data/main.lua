@@ -51,18 +51,18 @@ function SetIplPropState(interiorId, props, state, refresh)
     end
 end
 
----@param name string Name of the rendertarget
----@param model string Name of the model
-function CreateNamedRenderTargetForModel(name, model)
-    if not IsNamedRendertargetRegistered(name) then
-        RegisterNamedRendertarget(name, false)
-    end
+-- ---@param name string Name of the rendertarget
+-- ---@param model string Name of the model
+-- function CreateNamedRenderTargetForModel(name, model)
+--     if not IsNamedRendertargetRegistered(name) then
+--         RegisterNamedRendertarget(name, false)
+--     end
 
-    if not IsNamedRendertargetLinked(model) then
-        LinkNamedRendertarget(model)
-    end
+--     if not IsNamedRendertargetLinked(model) then
+--         LinkNamedRendertarget(model)
+--     end
 
-    local handle = IsNamedRendertargetRegistered(name) and GetNamedRendertargetRenderId(name) or 0
+--     local handle = IsNamedRendertargetRegistered(name) and GetNamedRendertargetRenderId(name) or 0
 
-    return handle
-end
+--     return handle
+-- end
