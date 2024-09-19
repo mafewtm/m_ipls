@@ -16,6 +16,11 @@ local ufos = require 'data.gtav.ufos'
 local redCarpet = require 'data.gtav.redCarpet'
 local northYankton = require 'data.gtav.northYankton'
 
+local highEndApartments = require 'data.gtav.highEndApts'
+local highEndHouses = require 'data.gtav.highEndHouses'
+local midEndHouse = require 'data.gtav.midEndHouse'
+local lowEndHouse = require 'data.gtav.lowEndHouse'
+
 CreateThread(function()
 
     ---@Singleplayer
@@ -43,19 +48,11 @@ CreateThread(function()
     ufos.chiliad:enable(false) -- 501.52880000, 5593.86500000, 796.23250000
     ufos.zancudo:enable(false) -- -2051.99463, 3237.05835, 1456.97021
 
-    -- ---@Online
-    -- GTAOApartmentHi1.LoadDefault() -- -35.31277 -580.4199 88.71221 (4 Integrity Way, Apt 30)
-    -- GTAOApartmentHi2.LoadDefault() -- -1477.14 -538.7499 55.5264 (Dell Perro Heights, Apt 7)
-    -- GTAOHouseHi1.LoadDefault() -- -169.286 486.4938 137.4436 (3655 Wild Oats Drive)
-    -- GTAOHouseHi2.LoadDefault() -- 340.9412 437.1798 149.3925 (2044 North Conker Avenue)
-    -- GTAOHouseHi3.LoadDefault() -- 373.023 416.105 145.7006 (2045 North Conker Avenue)
-    -- GTAOHouseHi4.LoadDefault() -- -676.127 588.612 145.1698 (2862 Hillcrest Avenue)
-    -- GTAOHouseHi5.LoadDefault() -- -763.107 615.906 144.1401 (2868 Hillcrest Avenue)
-    -- GTAOHouseHi6.LoadDefault() -- -857.798 682.563 152.6529 (2874 Hillcrest Avenue)
-    -- GTAOHouseHi7.LoadDefault() -- 120.5 549.952 184.097 (2677 Whispymound Drive)
-    -- GTAOHouseHi8.LoadDefault() -- -1288 440.748 97.69459 (2133 Mad Wayne Thunder)
-    -- GTAOHouseMid1.LoadDefault() -- 347.2686 -999.2955 -99.19622
-    -- GTAOHouseLow1.LoadDefault() -- 261.4586 -998.8196 -99.00863
+    ---@Online
+    highEndApartments:loadDefault()
+    highEndHouses:loadDefault()
+    midEndHouse:loadDefault() -- 347.2686 -999.2955 -99.19622
+    lowEndHouse:loadDefault() -- 261.4586 -998.8196 -99.00863
 
     -- ---@HighLife
     -- HLApartment1.LoadDefault() -- -1468.14 -541.815 73.4442 (Dell Perro Heights, Apt 4)
