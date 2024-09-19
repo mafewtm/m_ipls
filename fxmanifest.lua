@@ -7,6 +7,8 @@ description 'Just another IPL loader to customize your map'
 repository 'https://github.com/mafewtm/m_ipls'
 version '1.0.0'
 
+shared_script '@ox_lib/init.lua'
+
 client_scripts {
     'init.lua',
     'data/main.lua'
