@@ -1,10 +1,8 @@
--- -35.31277 -580.4199 88.71221 (4 Integrity Way, Apt 30)
--- 1477.14 -538.7499 55.5264 (Dell Perro Heights, Apt 7)
 local object = {
     interior = {
         interiorIds = {
-            apartmentHi1 = 141313,
-            apartmentHi2 = 141314,
+            141313, -- -35.31277 -580.4199 88.71221 (4 Integrity Way, Apt 30)
+            141314, -- 1477.14 -538.7499 55.5264 (Dell Perro Heights, Apt 7)
         },
         strip = {
             stages = {
@@ -55,17 +53,15 @@ function object.interior.smoke:enable(id, details, state, refresh)
 end
 
 function object:loadDefault()
-    self.interior.strip:enable(self.interior.interiorIds.apartmentHi1, self.interior.strip.stages, false, true)
-    self.interior.booze:enable(self.interior.interiorIds.apartmentHi1, self.interior.booze.stages, false, true)
-    self.interior.smoke:enable(self.interior.interiorIds.apartmentHi1, self.interior.smoke.stages, false, true)
+    for i = 1, #self.interior.interiorIds do
+        local interiodId = self.interior.interiorIds[i]
 
-    RefreshInterior(self.interior.interiorIds.apartmentHi1)
+        self.interior.strip:enable(interiodId, self.interior.strip.stages, false, true)
+        self.interior.booze:enable(interiodId, self.interior.booze.stages, false, true)
+        self.interior.smoke:enable(interiodId, self.interior.smoke.stages, false, true)
 
-    self.interior.strip:enable(self.interior.interiorIds.apartmentHi2, self.interior.strip.stages, false, true)
-    self.interior.booze:enable(self.interior.interiorIds.apartmentHi2, self.interior.booze.stages, false, true)
-    self.interior.smoke:enable(self.interior.interiorIds.apartmentHi2, self.interior.smoke.stages, false, true)
-
-    RefreshInterior(self.interior.interiorIds.apartmentHi2)
+        RefreshInterior(interiodId)
+    end
 end
 
 exports('GetHighEndApartmentsObject', function()
