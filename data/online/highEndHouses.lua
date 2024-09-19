@@ -115,3 +115,9 @@ function object:loadDefault()
 
     RefreshInterior(self.interior.interiorIds.houseHi8)
 end
+
+exports('GetHighEndHousesObject', function()
+    return object
+end)
+
+return object

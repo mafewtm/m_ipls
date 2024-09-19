@@ -67,3 +67,9 @@ function object:loadDefault()
 
     RefreshInterior(self.interior.interiorIds.apartmentHi2)
 end
+
+exports('GetHighEndApartmentsObject', function()
+    return object
+end)
+
+return object
