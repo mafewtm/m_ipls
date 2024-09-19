@@ -16,10 +16,10 @@ local ufos = require 'data.gtav.ufos'
 local redCarpet = require 'data.gtav.redCarpet'
 local northYankton = require 'data.gtav.northYankton'
 
-local highEndApartments = require 'data.gtav.highEndApts'
-local highEndHouses = require 'data.gtav.highEndHouses'
-local midEndHouse = require 'data.gtav.midEndHouse'
-local lowEndHouse = require 'data.gtav.lowEndHouse'
+local highEndApartments = require 'data.online.highEndApts'
+local highEndHouses = require 'data.online.highEndHouses'
+local midEndHouse = require 'data.online.midEndHouse'
+local lowEndHouse = require 'data.online.lowEndHouse'
 
 CreateThread(function()
 
