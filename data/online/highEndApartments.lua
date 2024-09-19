@@ -6,23 +6,23 @@ local object = {
         },
         strip = {
             stages = {
-                a = 'apart_hi_strip_a',
-                b = 'apart_hi_strip_b',
-                c = 'apart_hi_strip_c',
+                'apart_hi_strip_a',
+                'apart_hi_strip_b',
+                'apart_hi_strip_c',
             },
         },
         booze = {
             stages = {
-                a = 'apart_hi_booze_a',
-                b = 'apart_hi_booze_b',
-                c = 'apart_hi_booze_c',
+                'apart_hi_booze_a',
+                'apart_hi_booze_b',
+                'apart_hi_booze_c',
             },
         },
         smoke = {
             stages = {
-                a = 'apart_hi_smokes_a',
-                b = 'apart_hi_smokes_b',
-                c = 'apart_hi_smokes_c',
+                'apart_hi_smokes_a',
+                'apart_hi_smokes_b',
+                'apart_hi_smokes_c',
             },
         },
     },

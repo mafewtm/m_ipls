@@ -3,23 +3,23 @@ local object = {
         id = 148225,
         strip = {
             stages = {
-                a = 'apart_mid_strip_a',
-                b = 'apart_mid_strip_b',
-                c = 'apart_mid_strip_c',
+                'apart_mid_strip_a',
+                'apart_mid_strip_b',
+                'apart_mid_strip_c',
             },
         },
         booze = {
             stages = {
-                a = 'apart_mid_booze_a',
-                b = 'apart_mid_booze_b',
-                c = 'apart_mid_booze_c',
+                'apart_mid_booze_a',
+                'apart_mid_booze_b',
+                'apart_mid_booze_c',
             }
         },
         smoke = {
             stages = {
-                a = 'apart_mid_smoke_a',
-                b = 'apart_mid_smoke_b',
-                c = 'apart_mid_smoke_c',
+                'apart_mid_smoke_a',
+                'apart_mid_smoke_b',
+                'apart_mid_smoke_c',
             }
         },
     },
