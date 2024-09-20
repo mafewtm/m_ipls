@@ -16,7 +16,7 @@ local ufos = require 'data.gtav.ufos'
 local redCarpet = require 'data.gtav.redCarpet'
 local northYankton = require 'data.gtav.northYankton'
 
-local highEndApartments = require 'data.online.highEndApts'
+local highEndApartments = require 'data.online.highEndApartments'
 local highEndHouses = require 'data.online.highEndHouses'
 local midEndHouse = require 'data.online.midEndHouse'
 local lowEndHouse = require 'data.online.lowEndHouse'
