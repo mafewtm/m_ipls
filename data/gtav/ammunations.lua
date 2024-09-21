@@ -20,20 +20,17 @@ local object = {
     },
 }
 
+---@param id integer | integer[] Name(s) of the interior(s) to enable/disable
 ---@param hook string | string[] Name(s) of the IPL(s) to enable/disable
 ---@param state boolean Whether to enable or disable the IPL
 ---@param refresh boolean Whether to refresh the IPL
-function object:enable(hook, state, refresh)
-    if hook == self.hooks.store then
-        SetIplPropState(self.ammunationIds, hook, state, refresh)
-    elseif hook == self.hooks.club then
-        SetIplPropState(self.gunClubIds, hook, state, refresh)
-    end
+function object:enable(id, hook, state, refresh)
+    SetIplPropState(id, hook, state, refresh)
 end
 
 function object:loadDefault()
-    self:enable(self.hooks.store, true, true)
-    self:enable(self.hooks.club, true, true)
+    self:enable(self.ammunationIds,self.hooks.store, true, true)
+    self:enable(self.gunClubIds,self.hooks.club, true, true)
 end
 
 exports('GetAmmunationsObject', function()
