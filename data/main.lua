@@ -51,6 +51,21 @@ function SetIplPropState(interiorId, props, state, refresh)
     end
 end
 
+---@param interiodId integer
+---@param entitySet string
+---@param activate boolean
+function ToggleEntitySet(interiodId, entitySet, activate)
+    local isActive = IsInteriorEntitySetActive(interiodId, entitySet)
+
+    if activate and not isActive then
+        ActivateInteriorEntitySet(interiodId, entitySet)
+    elseif not activate and isActive then
+        DeactivateInteriorEntitySet(interiodId, entitySet)
+    end
+
+    RefreshInterior(interiodId)
+end
+
 -- ---@param name string Name of the rendertarget
 -- ---@param model string Name of the model
 -- function CreateNamedRenderTargetForModel(name, model)
